@@ -1,0 +1,74 @@
+<html>
+<head><title>menu</title>
+<STYLE TYPE = "text/css">
+
+
+div.bottom{
+position: absolute;
+width:100%;
+text-align: center;
+}
+div.photo{
+padding: 20pt;
+text-align:center;
+min-width: 1000pt;
+}
+img:hover{
+opacity:0.5;
+filter:alpha(opacity=80);
+}
+</STYLE>
+<script language = "javascript">
+function pic(num){
+	if(num == 1) window.document.images[0].src = "hsmall_cat1.jpg"
+	else if(num ==2) window.document.images[1].src = "hsmall_dog1.jpg"
+	else if(num ==3) window.document.images[2].src = "hsmall_cat2.jpg"
+	else if(num ==4) window.document.images[3].src = "hsmall_dog2.jpg"
+	else if(num ==5) window.document.images[4].src = "hsmall_cat3.jpg"
+	else if(num ==6) window.document.images[5].src = "hsmall_dog3.jpg"
+	else if(num ==7) window.document.images[6].src = "hsmall_cat4.jpg"
+	else if(num ==8) window.document.images[7].src = "hsmall_dog4.jpg"
+	else if(num ==9) window.document.images[8].src = "hsmall_cat5.jpg"
+	else if(num ==10) window.document.images[9].src = "hsmall_dog5.jpg"
+	else if(num ==11) window.document.images[10].src = "hsmall_cat6.jpg"
+	else window.document.images[11].src = "hsmall_dog6.jpg"
+}
+
+function view(num){
+	if(num == 1) window.document.images[0].src = "small_cat1.jpg"
+	else if(num ==2) window.document.images[1].src = "small_dog1.jpg"
+	else if(num ==3) window.document.images[2].src = "small_cat2.jpg"
+	else if(num ==4) window.document.images[3].src = "small_dog2.jpg"
+	else if(num ==5) window.document.images[4].src = "small_cat3.jpg"
+	else if(num ==6) window.document.images[5].src = "small_dog3.jpg"
+	else if(num ==7) window.document.images[6].src = "small_cat4.jpg"
+	else if(num ==8) window.document.images[7].src = "small_dog4.jpg"
+	else if(num ==9) window.document.images[8].src = "small_cat5.jpg"
+	else if(num ==10) window.document.images[9].src = "small_dog5.jpg"
+	else if(num ==11) window.document.images[10].src = "small_cat6.jpg"
+	else window.document.images[11].src = "small_dog6.jpg"
+}
+</script>
+</head>
+<body>
+<div class = "photo">
+
+<img src = "small_cat1.jpg" onmouseover = "pic(1)" onclick="window.open('cat1.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" alt="cat" onmouseout = "view(1)">
+<img src = "small_dog1.jpg" onmouseover = "pic(2)" onclick="window.open('dog1.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(2)">
+<img src = "small_cat2.jpg" onmouseover = "pic(3)" onclick="window.open('cat2.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(3)">
+<img src = "small_dog2.jpg" onmouseover = "pic(4)" onclick="window.open('dog2.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(4)">
+<img src = "small_cat3.jpg" onmouseover = "pic(5)" onclick="window.open('cat3.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(5)">
+<img src = "small_dog3.jpg" onmouseover = "pic(6)" onclick="window.open('dog3.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(6)">
+<img src = "small_cat4.jpg" onmouseover = "pic(7)" onclick="window.open('cat4.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(7)">
+<img src = "small_dog4.jpg" onmouseover = "pic(8)" onclick="window.open('dog4.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(8)">
+<img src = "small_cat5.jpg" onmouseover = "pic(9)" onclick="window.open('cat5.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(9)">
+<img src = "small_dog5.jpg" onmouseover = "pic(10)" onclick="window.open('dog5.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(10)">
+<img src = "small_cat6.jpg" onmouseover = "pic(11)" onclick="window.open('cat6.jpg', 'cat', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(11)">
+<img src = "small_dog6.jpg" onmouseover = "pic(12)" onclick="window.open('dog6.jpg', 'dog', 'width=1200 height=800 left=0 top=0')" onmouseout = "view(12)">
+</div>
+
+<div class="bottom">
+<font align="center" face="경기천년바탕 Regular">(C) 2018, by Jo Hyun-ah_Photo Studio</font>
+</div>
+</body>
+</html>

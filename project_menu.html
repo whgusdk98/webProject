@@ -1,0 +1,53 @@
+<html>
+<head><title>menu</title>
+<STYLE TYPE = "text/css">
+
+div.title{
+height:40pt;
+background: #DDEEDD;
+text-align: center;
+padding-top: 8pt;
+margin-left:0pt;
+margin-right:0pt;
+}
+
+div.menu{
+text-align: center;
+padding-top: 5pt;
+word-spacing:20pt;
+padding-bottom: 0pt;
+}
+a {		
+font-family: 경기천년바탕 Regular;
+font-size: 15pt;
+color: #777777;
+text-decoration:None;
+}<!--embedding방식으로 글꼴 설정 , 하이퍼링크 밑줄,색깔 없애기-->
+</STYLE>
+
+<script language = "javascript">
+
+function loginsite(){
+window.open("Login.html","login","toolbar=no width=400 height=300")
+}
+</script>
+
+</head>
+<body>
+
+<div class=title>
+<img src = "ppp.jpg" height="30pt">
+<font size="6pt" face="경기천년바탕 Regular" color = "#777777"><b><b>&nbsp;&nbsp;JHA_&nbsp;&nbsp;Photo&nbsp;&nbsp;Studio</b></b></font>
+</div>
+
+<div class = menu>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "Home.html" target="show">Home</a>&nbsp;|
+<a href = "About.html" target="show">About</a>&nbsp;|
+<a href = "Photographs.html" target="show">Photographs</a>&nbsp;|
+<a href = "Services.html" target="show">My_Services</a>&nbsp;|
+<a href = "Contact.php" target="show">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "Home.html" target="show" onclick ="loginsite()">[LOGIN]</a>
+</div>
+
+</body>
+</html>

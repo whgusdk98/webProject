@@ -1,0 +1,69 @@
+<html>
+<head><title>JHA_ Photo Studio</title>
+<STYLE TYPE = "text/css">
+
+div.bg1{
+position: absolute;
+top:100pt;
+left:100pt;
+color: white;                                                                
+text-align:center;
+border:3pt solid white;
+padding: 8pt;
+height: 20pt;
+width: 120pt;
+}
+
+div.image{
+position: relative; 
+padding:20pt; 
+min-width: 700pt; <!--배경사진이 특정 너비에서 줄어들지 않게 -->
+}    
+
+div.bg2{
+position: absolute;
+top:100pt;
+left:100pt;
+color: white;                                                                
+text-align:center;
+border:3pt solid #BBBBBB;
+padding: 8pt;
+height: 20pt;
+width: 120pt;
+background:#BBBBBB;
+}
+
+div.bottom{
+position: relative;
+
+width:100%;
+text-align: center;
+}
+
+</STYLE>
+<script language = "javascript">
+var i=1;
+function change(){<!--배경이미지 자동 전환함수-->
+	++i;
+	document.all["img1"].src ="back"+ i+".jpg";
+	if(i == 4) i=0;
+	t = setTimeout("change()",2500);
+}
+</script>
+</head>
+<body onload= "setTimeout('change()',2500)">
+<div class="image">
+<img src ="back1.jpg" width="100%" id="img1">
+</div>
+
+<a href="Photographs.html">
+<div class="bg1" onmouseover = "this.className='bg2'"onMouseOut="this.className='bg1'">
+<!--div에 마우스 올렸을 때와 아닐 때 변하게 하기-->
+<font size="6pt" face="경기천년바탕 Regular">View More</font></div>
+</a>
+
+<div class="bottom">
+<font align="center" face="경기천년바탕 Regular">(C) 2018, by Jo Hyun-ah_Photo Studio</font>
+</div>
+</body>
+</html>

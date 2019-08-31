@@ -1,0 +1,42 @@
+<html>
+<head><script language = "javascript">
+function hash(str){
+	var i = 0, H = 15487271
+	for(;i<str.length;i++){
+		H = (H * str.charCodeAt(i)) % 100155623
+	}
+	return String(H % 100000000)
+}
+function chk(){
+	document.lgn.enc.value = hash(document.lgn.pw.value)
+	if(document.lgn.id.value == ""){
+		alert("이메일 주소를 입력하세요")
+		document.lgn.id.focus()
+		return false
+	}
+	if(document.lgn.pw.value == ""){
+		alert("비밀번호를 입력하세요")
+		document.lgn.pw.focus()
+		return false
+	}
+	return true
+}
+</script></head>
+<body>
+<hr width="100%" size = "1" color="gray">
+<h2 align="center">LOGIN</h2>
+<hr width="100%" size = "1" color="gray">
+
+<form name = "lgn" method = "post" action = "login.php">
+<p>Email:<input type = "email" name = "id"></p>
+<p>Password:<input type = "password" name = "pw"></p>
+<p>Email:asdf@gmail.com<br>
+Password:asdf</p>
+<input type= "hidden" name = "enc">
+<input type = "submit" value="로그인" onclick = "return chk()">
+<input type = "reset" value="처음부터">
+<input type = "button" value="회원가입" target = "show" onclick = "window.close(),window.open('sign_in.html','회원가입','width=500 height=700')">
+</form>
+
+</body>
+</html>
